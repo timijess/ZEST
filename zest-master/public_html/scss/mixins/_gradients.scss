@@ -1,0 +1,19 @@
+// ZEST
+
+// vertical
+@mixin gradient-vertical($start: #555, $end: #333) {
+    background-color: $start;
+    background-image: linear-gradient(to bottom, $start 0%, $end 100%);
+}
+
+// horizontal
+@mixin gradient-horizontal($start: #555, $end: #333) {
+    background-color: $start;
+    background: linear-gradient(to right, $start 0%, $end 100%);
+}
+
+
+// radial
+@mixin gradient-radial($inner: #555, $outer: #333) {
+    background-image: radial-gradient(circle, $inner, $outer);
+}
